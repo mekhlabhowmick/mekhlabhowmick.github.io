@@ -524,7 +524,7 @@ h3 {
 .abstract-toggle {
   display: block;
 
-  margin-top: 7px;
+  margin-top: 8px;
   padding: 0;
 
   border: 0;
@@ -533,14 +533,14 @@ h3 {
   color: var(--link);
 
   font-family: inherit;
-  font-size: 0.80rem;
+  font-size: 0.92rem;
   font-weight: 500;
 
   cursor: pointer;
 
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 
   transition: color 0.15s ease;
 }
@@ -563,10 +563,10 @@ h3 {
 .abstract {
   display: none;
 
-  max-width: 780px;
+  max-width: 800px;
 
-  margin-top: 10px;
-  padding: 15px 18px 16px;
+  margin-top: 12px;
+  padding: 18px 20px 19px;
 
   background: var(--soft-bg);
 
@@ -580,8 +580,8 @@ h3 {
     "Times New Roman",
     serif;
 
-  font-size: 0.94rem;
-  line-height: 1.7;
+  font-size: 1.02rem;
+  line-height: 1.75;
 }
 
 .abstract.show {
@@ -594,7 +594,7 @@ h3 {
 .abstract strong {
   display: block;
 
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 
   color: var(--heading);
 
@@ -606,15 +606,13 @@ h3 {
     Arial,
     sans-serif;
 
-  font-size: 0.74rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   line-height: 1.4;
 
   text-transform: uppercase;
 }
-
-
 /* ---------- Convention text ---------- */
 
 .convention {
