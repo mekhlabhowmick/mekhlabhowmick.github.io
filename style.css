@@ -274,7 +274,37 @@ p.interest-note {
   font-size: 15.5px;
   line-height: 1.65;
 }
+/* ---------- Center research interests ---------- */
 
+.interests {
+  text-align: center;
+}
+
+.interest-block h2 {
+  text-align: center;
+}
+
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.taglist li {
+  padding: 5px 13px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--text);
+}
+
+.taglist li::marker {
+  display: none;
+}
 
 /* ---------- profile / looking-for box ---------- */
 
