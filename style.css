@@ -193,27 +193,25 @@ h3 {
 
 .interests {
   width: 100%;
+  max-width: 920px;
   margin: 38px 0 42px;
   padding: 25px 0 28px;
+
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  text-align: center !important;
+
+  text-align: center;
 }
 
 .interest-block {
   width: 100%;
-  margin: 0 auto;
-  text-align: center !important;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  text-align: center;
 }
 
 .interest-block h2 {
   width: 100%;
   margin: 0 0 15px;
-  text-align: center !important;
 
   color: var(--muted);
   font-family:
@@ -227,24 +225,21 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.14em;
   line-height: 1.4;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .taglist {
-  width: 100%;
-  max-width: 900px;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: center !important;
+  justify-content: center;
   align-items: center;
 
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 0;
 
   list-style: none;
-  text-align: center !important;
-
   gap: 8px 9px;
 }
 
@@ -263,9 +258,6 @@ h3 {
   white-space: nowrap;
 }
 
-.taglist li::marker {
-  display: none;
-}
 /* ---------- Looking for ---------- */
 
 .profilerow {
