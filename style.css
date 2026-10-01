@@ -583,3 +583,31 @@ h3 {
     margin-top: 24px;
   }
 }
+
+.pub-title {
+  cursor: pointer;
+}
+
+.pub-title::marker {
+  color: var(--muted);
+}
+
+.abstract {
+  margin-top: 0.75rem;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.abstract strong {
+  color: inherit;
+}
+
+details {
+  margin: 0;
+}
+
+details[open] {
+  margin-bottom: 0.5rem;
+}
