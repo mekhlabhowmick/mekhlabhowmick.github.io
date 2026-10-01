@@ -176,7 +176,7 @@ p {
 
 .area {
   margin: 0;
-  color: var(--muted);
+  color: var(--heading);
   font-size: 1.00rem;
   line-height: 1.55;
 }
