@@ -87,12 +87,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         describing the main argument, methodology, and contribution of the
         work will be added here.
@@ -118,12 +118,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         describing the main argument, methodology, and contribution of the
         work will be added here.
@@ -154,12 +154,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         describing the research question, empirical approach, findings,
         and contribution will be added here.
@@ -192,12 +192,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         describing the theoretical argument and contribution of the paper
         will be added here.
@@ -220,12 +220,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         describing the research question, theoretical framework, and
         contribution of the paper will be added here.
@@ -247,12 +247,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         discussing paid domestic labour, commodified labour power, and the
         organisation of work within households will be added here.
@@ -275,12 +275,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         discussing agency-mediated domestic labour and the changing
         relationship between domestic and capitalist production will be
@@ -303,12 +303,12 @@
       <button class="abstract-toggle"
               type="button"
               aria-expanded="false"
-              onclick="toggleAbstract(this)">
-        Show abstract
+              onclick="toggleSummary(this)">
+        Show summary
       </button>
 
       <div class="abstract">
-        <strong>Abstract.</strong>
+        <strong>Summary.</strong>
         This is dummy abstract text for the time being. A full abstract
         describing the central argument and theoretical implications of the
         paper will be added here.
@@ -326,12 +326,12 @@
 
 
 <script>
-function toggleAbstract(button) {
-  const abstract = button.nextElementSibling;
-  const isOpen = abstract.classList.contains("show");
+function toggleSummary(button) {
+  const summary = button.nextElementSibling;
+  const isOpen = summary.classList.contains("show");
 
-  abstract.classList.toggle("show");
-  button.textContent = isOpen ? "Show abstract" : "Hide abstract";
+  summary.classList.toggle("show");
+  button.textContent = isOpen ? "Show summary" : "Hide summary";
   button.setAttribute("aria-expanded", !isOpen);
 }
 </script>
