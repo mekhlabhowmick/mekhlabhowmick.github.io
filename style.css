@@ -1,711 +1,520 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
-
-/* ------------------------------------------------------------------
-   Mekhla Bhowmick — personal academic website
-   Minimal, warm, scholarly design.
-   ------------------------------------------------------------------ */
+/* =========================================================
+   Mekhla Bhowmick — Academic Website
+   ========================================================= */
 
 :root {
-  --sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-  --ink:       #263238;
-  --text:      #37474F;
-  --muted:     #66727C;
-  --faint:     #7B8790;
-
-  --rule:      #D9E2E8;
-  --hairline:  #EAF0F3;
-
-  --accent:    #1769AA;
-  --accent-dk: #0D4F80;
-
-  --bg:        #FCFBF7;
-  --panel:     #F3F7FA;
-  --card:      #FFFFFF;
-
-  --measure:   900px;
+  --background: #fffff8;
+  --paper: #fffef9;
+  --text: #363b3d;
+  --heading: #314f60;
+  --link: #315d70;
+  --link-hover: #24495a;
+  --muted: #62696b;
+  --line: #dedfd7;
+  --soft-bg: #f7f7f0;
+  --accent: #315d70;
 }
 
-
-/* ---------- base ---------- */
+/* ---------- Base ---------- */
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--background);
   color: var(--text);
-  font-family: var(--sans);
-  font-size: 17px;
-  line-height: 1.72;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
 }
+
+/* ---------- Main width ---------- */
 
 .wrap {
-  max-width: var(--measure);
+  width: min(100% - 48px, 1060px);
   margin: 0 auto;
-  padding: 0 28px;
 }
 
+/* ---------- Links ---------- */
 
-/* ---------- accessibility ---------- */
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
 
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
   border-radius: 2px;
 }
 
+/* ---------- Navigation ---------- */
 
-/* ---------- navigation ---------- */
-
-nav.topnav {
-  border-bottom: 1px solid var(--rule);
-  background: var(--bg);
-  margin-bottom: 52px;
+.topnav {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
 }
 
-nav.topnav .wrap {
+.topnav .wrap {
   display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-  padding-top: 18px;
-  padding-bottom: 15px;
+  align-items: center;
+  gap: 30px;
+  min-height: 64px;
 }
 
-nav.topnav a {
-  position: relative;
+.topnav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 14.5px;
+  font-size: 0.96rem;
   font-weight: 500;
-  letter-spacing: 0.015em;
-  padding-bottom: 5px;
-  transition: color 0.15s ease;
+  padding: 18px 0;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
-nav.topnav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.15s ease;
+.topnav a:hover {
+  color: var(--heading);
 }
 
-nav.topnav a:hover {
-  color: var(--accent);
+.topnav a.current {
+  color: var(--heading);
+  border-bottom-color: var(--accent);
 }
 
-nav.topnav a:hover::after {
-  transform: scaleX(1);
+/* ---------- Main content ---------- */
+
+main.wrap {
+  padding-top: 52px;
+  padding-bottom: 70px;
 }
 
-nav.topnav a.current {
-  color: var(--ink);
+p {
+  margin: 0 0 25px;
+  max-width: 920px;
 }
 
-nav.topnav a.current::after {
-  transform: scaleX(1);
-  background: var(--ink);
-}
+/* ---------- Header ---------- */
 
-
-/* ---------- home/profile header ---------- */
-
-header.masthead {
+.masthead {
   display: flex;
   align-items: center;
   gap: 34px;
-  margin-bottom: 38px;
+  margin-bottom: 46px;
 }
 
-header.masthead img.portrait {
-  width: 148px;
-  height: 148px;
-  border-radius: 50%;
+.masthead > div {
+  min-width: 0;
+}
+
+.portrait {
+  display: block;
+  width: 190px;
+  height: 190px;
+  flex: 0 0 190px;
   object-fit: cover;
-  flex: 0 0 auto;
-  background: var(--panel);
-  box-shadow:
-    0 0 0 1px var(--rule),
-    0 5px 18px rgba(38, 50, 56, 0.08);
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 5px 22px rgba(60, 55, 45, 0.12);
 }
 
-header.masthead h1 {
+.masthead h1 {
   margin: 0 0 7px;
-  color: var(--ink);
-  font-size: 39px;
-  font-weight: 400;
-  line-height: 1.18;
-  letter-spacing: -0.01em;
+  color: var(--heading);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.65rem;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-header.masthead .role {
+.role {
   margin: 0;
   color: var(--muted);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 1.08rem;
+  line-height: 1.55;
 }
 
+/* ---------- Introductory text ---------- */
 
-/* ---------- typography ---------- */
+.lede {
+  max-width: 920px;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  margin-bottom: 27px;
+}
+
+/* ---------- Headings ---------- */
 
 h1,
 h2,
 h3 {
-  color: var(--ink);
-}
-
-h1.pagetitle {
-  margin: 0 0 30px;
-  font-size: 33px;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  color: var(--heading);
 }
 
 h2 {
-  margin: 48px 0 19px;
-  padding-bottom: 9px;
-  border-bottom: 1px solid var(--rule);
-  font-size: 22px;
-  font-weight: 500;
+  margin-top: 46px;
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
   line-height: 1.3;
+  font-weight: 600;
 }
 
 h3 {
-  margin: 30px 0 11px;
-  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.08rem;
   font-weight: 600;
-  line-height: 1.4;
 }
 
-p {
-  margin: 0 0 18px;
-}
-
-p.lede {
-  max-width: 850px;
-  margin-bottom: 22px;
-  font-size: 18.5px;
-  line-height: 1.68;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent-dk);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-
-/* ---------- interests ---------- */
+/* ---------- Research interests ---------- */
+/*
+   The entire section is centered:
+   - heading centered
+   - pills centered
+   - each pill remains normally readable
+*/
 
 .interests {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.9fr);
-  margin: 0 0 32px;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  margin: 38px 0 42px;
+  padding: 25px 0 28px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .interest-block {
-  padding: 21px 28px 23px 0;
-}
-
-.interest-block + .interest-block {
-  padding-left: 28px;
-  border-left: 1px solid var(--hairline);
-}
-
-.interest-block h2,
-.interest-block h3 {
-  margin: 0 0 13px;
-  padding: 0;
-  border: 0;
-  color: var(--faint);
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-ul.taglist {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul.taglist li {
-  padding: 3px 11px;
-  border: 1px solid var(--rule);
-  border-radius: 100px;
-  background: var(--card);
-  color: var(--text);
-  font-size: 13.5px;
-  line-height: 1.5;
-}
-
-p.interest-note {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15.5px;
-  line-height: 1.65;
-}
-/* ---------- Center research interests ---------- */
-
-.interests {
   text-align: center;
 }
 
 .interest-block h2 {
-  text-align: center;
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .taglist {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 9px 10px;
+  align-items: center;
+  gap: 8px 9px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .taglist li {
-  padding: 5px 13px;
-  border: 1px solid var(--border);
+  margin: 0;
+  padding: 4px 13px;
+  border: 1px solid #d5dfe4;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.72);
   color: var(--text);
+  font-size: 0.91rem;
+  line-height: 1.45;
+  white-space: nowrap;
 }
 
-.taglist li::marker {
-  display: none;
-}
+/* ---------- Looking for ---------- */
 
-/* ---------- profile / looking-for box ---------- */
-
-p.profilerow {
-  margin: 28px 0 22px;
-  padding: 12px 16px;
-  border: 1px solid var(--rule);
+.profilerow {
+  max-width: 920px;
+  margin: 36px 0 32px;
+  padding: 17px 20px;
+  background: var(--soft-bg);
   border-left: 3px solid var(--accent);
   border-radius: 3px;
-  background: var(--panel);
   color: var(--muted);
-  font-size: 15.5px;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
-p.profilerow strong {
-  color: var(--ink);
+.profilerow strong {
+  color: var(--heading);
   font-weight: 600;
 }
 
+/* ---------- Explore links ---------- */
 
-/* ---------- timeline ---------- */
+.explore {
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-size: 1rem;
+}
 
-dl.timeline {
+.contact {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* ---------- Page titles ---------- */
+
+.pagetitle {
+  margin: 0 0 40px;
+  color: var(--heading);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.35rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* ---------- Timeline ---------- */
+
+.timeline {
   margin: 0;
 }
 
-dl.timeline dt {
+.timeline dt {
   float: left;
+  width: 125px;
   clear: left;
-  width: 150px;
-  padding: 6px 0;
-  color: var(--muted);
-  font-size: 15.5px;
-  font-variant-numeric: tabular-nums;
-  line-height: 1.6;
+  color: var(--heading);
+  font-weight: 600;
 }
 
-dl.timeline dd {
-  margin: 0 0 0 166px;
-  padding: 6px 0;
-  color: var(--text);
-  line-height: 1.6;
-}
-
-dl.timeline dd + dt {
-  margin-top: 3px;
+.timeline dd {
+  margin-left: 150px;
+  margin-bottom: 24px;
 }
 
 .note {
-  color: var(--faint);
-  font-size: 14px;
-}
-
-
-/* ---------- labelled fields ---------- */
-
-dl.fields {
-  margin: 0;
-}
-
-dl.fields dt {
-  float: left;
-  clear: left;
-  width: 125px;
-  padding: 7px 0 0;
-  color: var(--faint);
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-dl.fields dd {
-  margin: 0 0 0 142px;
-  padding: 4px 0;
-}
-
-
-/* ---------- publication list ---------- */
-
-ol.pubs {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ol.pubs > li {
-  position: relative;
-  margin-bottom: 25px;
-  padding-left: 27px;
-}
-
-ol.pubs > li::before {
-  content: "\2022";
-  position: absolute;
-  left: 2px;
-  top: 0;
   color: var(--muted);
-  font-size: 26px;
-  line-height: 1;
+  font-size: 0.92rem;
+}
+
+/* ---------- Tables ---------- */
+
+.courses {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 28px;
+}
+
+.courses th,
+.courses td {
+  padding: 13px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.courses th {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.courses .term {
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+/* ---------- Research / publications ---------- */
+
+.pubs {
+  padding-left: 1.5rem;
+}
+
+.pubs li {
+  padding-left: 7px;
+  margin-bottom: 24px;
 }
 
 .pub-title {
-  margin-bottom: 3px;
-  color: var(--ink);
-  font-size: 17px;
+  color: var(--heading);
   font-weight: 600;
-  line-height: 1.48;
 }
 
 .pub-authors {
+  margin-top: 3px;
   color: var(--muted);
-  font-size: 15.5px;
-  line-height: 1.55;
 }
 
 .pub-meta {
   margin-top: 4px;
-}
-
-.pub-venue {
-  color: var(--text);
-  font-size: 15px;
-}
-
-a.pub-venue {
-  color: var(--accent);
-}
-
-.pub-status {
-  color: var(--faint);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  color: var(--muted);
+  font-size: 0.91rem;
 }
 
 .year-head {
-  margin: 34px 0 13px;
-  padding: 0;
-  border: 0;
-  color: var(--muted);
-  font-size: 17px;
+  margin-top: 30px;
+  color: var(--accent);
+  font-size: 1.05rem;
   font-weight: 600;
 }
 
+/* ---------- Footer ---------- */
 
-/* ---------- publication auxiliary links ---------- */
-
-.pub-links {
-  display: inline;
-  margin-left: 8px;
-}
-
-.pub-links a {
-  display: inline-block;
-  position: relative;
-  top: -1px;
-  margin: 0 5px 4px 0;
-  padding: 2px 10px;
-  border: 1px solid var(--rule);
-  border-radius: 100px;
-  background: var(--card);
+.pagefoot {
+  border-top: 1px solid var(--line);
+  padding: 24px 0 30px;
   color: var(--muted);
-  font-size: 12.5px;
-  letter-spacing: 0.01em;
+  font-size: 0.86rem;
 }
 
-.pub-links a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  text-decoration: none;
-}
-
-
-/* ---------- collaborators ---------- */
-
-ul.people {
-  columns: 2;
-  column-gap: 44px;
-  list-style: none;
-  margin: 8px 0 0;
-  padding: 0;
-}
-
-ul.people li {
-  break-inside: avoid;
-  margin: 0 0 8px;
-  font-size: 16px;
-}
-
-
-/* ---------- teaching table ---------- */
-
-table.courses {
-  width: 100%;
-  margin-top: 8px;
-  border-collapse: collapse;
-}
-
-table.courses th,
-table.courses td {
-  padding: 12px 18px 12px 0;
-  border-bottom: 1px solid var(--hairline);
-  text-align: left;
-  vertical-align: top;
-}
-
-table.courses th {
-  padding-top: 7px;
-  padding-bottom: 9px;
-  border-bottom-color: var(--rule);
-  color: var(--faint);
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-table.courses td {
-  font-size: 15.5px;
-  line-height: 1.55;
-}
-
-table.courses td.term {
-  white-space: nowrap;
-  color: var(--muted);
-  font-size: 15px;
-  font-variant-numeric: tabular-nums;
-}
-
-
-/* ---------- misc / talks ---------- */
-
-main > h2 + dl.timeline {
-  margin-bottom: 4px;
-}
-
-
-/* ---------- conventions / small notes ---------- */
-
-p.convention {
-  margin: 18px 0 4px;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-.alpha-star {
-  margin-left: 1px;
-  color: var(--faint);
-  font-size: 0.7em;
-  font-weight: 400;
-  vertical-align: super;
-}
-
-
-/* ---------- author links ---------- */
-
-a.author-link {
-  border-bottom: 1px dotted #C9D5DC;
-  color: inherit;
-  text-decoration: none;
-}
-
-a.author-link:hover {
-  border-bottom-color: var(--accent);
-  color: var(--accent);
-  text-decoration: none;
-}
-
-
-/* ---------- footer ---------- */
-
-footer.pagefoot {
-  margin-top: 70px;
-  padding: 20px 0 48px;
-  border-top: 1px solid var(--rule);
-  color: var(--faint);
-  font-size: 13px;
-}
-
-
-/* ---------- mobile ---------- */
+/* ---------- Mobile ---------- */
 
 @media (max-width: 700px) {
 
-  body {
-    font-size: 16.5px;
+  html {
+    font-size: 17px;
   }
 
   .wrap {
-    padding: 0 21px;
+    width: min(100% - 32px, 1060px);
   }
 
-  nav.topnav {
-    margin-bottom: 40px;
-  }
-
-  nav.topnav .wrap {
-    gap: 20px;
-  }
-
-  nav.topnav a {
-    font-size: 14px;
-  }
-
-  header.masthead {
-    align-items: flex-start;
-    gap: 21px;
-    margin-bottom: 30px;
-  }
-
-  header.masthead img.portrait {
-    width: 112px;
-    height: 112px;
-  }
-
-  header.masthead h1 {
-    font-size: 31px;
-  }
-
-  header.masthead .role {
-    font-size: 14.5px;
-  }
-
-  h1.pagetitle {
-    margin-bottom: 25px;
-    font-size: 29px;
-  }
-
-  h2 {
-    margin-top: 40px;
-    font-size: 21px;
-  }
-
-  p.lede {
-    font-size: 17.5px;
-  }
-
-  .interests {
-    display: block;
-  }
-
-  .interest-block {
-    padding: 19px 0;
-  }
-
-  .interest-block + .interest-block {
-    padding-left: 0;
-    border-top: 1px solid var(--hairline);
-    border-left: 0;
-  }
-
-  dl.fields dt,
-  dl.timeline dt {
-    float: none;
-    width: auto;
-    padding-bottom: 1px;
-  }
-
-  dl.fields dd,
-  dl.timeline dd {
-    margin-left: 0;
-    padding-top: 1px;
-    margin-bottom: 13px;
-  }
-
-  table.courses {
-    display: block;
+  .topnav .wrap {
+    gap: 18px;
+    min-height: 58px;
     overflow-x: auto;
   }
 
-  table.courses th,
-  table.courses td {
-    min-width: 130px;
-    padding-right: 15px;
+  .topnav a {
+    white-space: nowrap;
+    font-size: 0.9rem;
   }
 
-  ul.people {
-    columns: 1;
+  main.wrap {
+    padding-top: 38px;
   }
 
-  ol.pubs > li {
-    padding-left: 24px;
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+
+  .portrait {
+    width: 155px;
+    height: 155px;
+    flex-basis: 155px;
+  }
+
+  .masthead h1 {
+    font-size: 2.25rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  /* Keep research interests centered on mobile */
+  .interests {
+    margin-top: 32px;
+    margin-bottom: 34px;
+    padding: 22px 0 25px;
+  }
+
+  .interest-block {
+    text-align: center;
+  }
+
+  .taglist {
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .taglist li {
+    white-space: normal;
+    font-size: 0.88rem;
+  }
+
+  .profilerow {
+    margin-top: 30px;
+  }
+
+  .timeline dt {
+    float: none;
+    width: auto;
+    margin-bottom: 3px;
+  }
+
+  .timeline dd {
+    margin-left: 0;
+    margin-bottom: 22px;
+  }
+
+  .courses {
+    font-size: 0.92rem;
+  }
+
+  .courses th,
+  .courses td {
+    padding: 10px 7px;
   }
 }
 
+/* ---------- Print ---------- */
 
-/* ---------- reduced motion ---------- */
+@media print {
 
-@media (prefers-reduced-motion: reduce) {
-
-  html {
-    scroll-behavior: auto;
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
   }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .topnav {
+    display: none;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: none;
+  }
+
+  main.wrap {
+    padding-top: 0;
+  }
+
+  .masthead {
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .pagefoot {
+    margin-top: 24px;
   }
 }
