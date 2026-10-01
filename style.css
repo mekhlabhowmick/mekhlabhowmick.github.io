@@ -1,434 +1,871 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Research &mdash; Mekhla Bhowmick</title>
-
-<meta name="description"
-      content="Research, publications, and working papers of Mekhla Bhowmick, PhD scholar in Economics at the University of Calcutta.">
-
-<link rel="canonical"
-      href="https://mekhlabhowmick.github.io/research.html">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Mekhla Bhowmick">
-<meta property="og:title" content="Research &mdash; Mekhla Bhowmick">
-<meta property="og:description"
-      content="Research on domestic labour, Marxian political economy, and feminist economics.">
-<meta property="og:url"
-      content="https://mekhlabhowmick.github.io/research.html">
-<meta property="og:image"
-      content="https://mekhlabhowmick.github.io/photo.jpg">
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="icon"
-      href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2712%27%20fill%3D%27%23fffff8%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2745%27%20text-anchor%3D%27middle%27%20font-family%3D%27Helvetica%2CArial%2Csans-serif%27%20font-size%3D%2740%27%20fill%3D%27%23444444%27%3EM%3C%2Ftext%3E%3C%2Fsvg%3E">
-
-</head>
-
-<body>
-
-<nav class="topnav">
-  <div class="wrap">
-    <a href="/">About</a>
-    <a class="current" href="/research.html">Research</a>
-    <a href="/bio.html">Bio</a>
-    <a href="/teaching.html">Teaching</a>
-    <a href="/misc.html">Talks &amp; Activities</a>
-  </div>
-</nav>
-
-
-<main class="wrap">
-
-  <h1 class="pagetitle">Research</h1>
-
-
-  <p>
-    My doctoral thesis, <em>Rethinking Domestic Labour: A Theoretical Inquiry</em>,
-    re-theorises domestic labour through a class-focused approach. I examine how
-    domestic labour is organised within households and how different forms of
-    domestic production relate to class, gender, power, and the wider processes
-    of social reproduction.
-  </p>
-
-  <p>
-    Drawing on the class analysis associated with Resnick and Wolff, I argue
-    against treating the household or domestic labour as governed by a single
-    underlying relation. A household may contain one or multiple class
-    structures, while domestic production can take diverse forms rather than
-    conforming to a single model.
-  </p>
-
-  <p>
-    My empirical work focuses primarily on Indian households. The research
-    considers home-based enterprises producing commodities for the market,
-    paid domestic work and the entry of wage labour into the household,
-    care work arranged through staffing agencies, and households that become
-    sites of capitalist production.
-  </p>
-
-
-  <!-- =====================================================
-       PUBLICATIONS
-       ===================================================== -->
-
-  <div class="publications">
-
-    <h2>Publications</h2>
-
-
-    <h3 class="year-head">2026</h3>
-
-    <ol class="pubs">
-
-
-      <li data-key="philosophy-praxis">
-
-        <details>
-
-          <summary class="pub-title">
-            The Philosophy of Praxis: Marx&rsquo;s Theses on Feuerbach
-            <span class="note">(Charyar Darshan)</span>
-          </summary>
-
-          <div class="pub-authors">
-            with Aryaman Roy, Kaustav Saha, Deepro Majumder and
-            Sayonee Majumdar
-          </div>
-
-          <div class="pub-meta">
-            <span class="pub-venue">
-              Book &middot; ISBN 9788199253308 &middot; in Bengali
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            describing the main argument, methodology, and contribution of
-            the work will be added here.
-          </div>
-
-        </details>
-
-      </li>
-
-
-      <li data-key="domestic-labour-class">
-
-        <details>
-
-          <summary class="pub-title">
-            Domestic Labour and Class: The Home and Outside of Capitalism
-            <span class="note">(Grihoshrom ebong Sreni)</span>
-          </summary>
-
-          <div class="pub-meta">
-            <span class="pub-venue">
-              Chapter in
-              <em>
-                The Iron Gates of Capital: Marx&rsquo;s Capital and
-                Alternative Paths
-              </em>
-              (ed.) &middot; ISBN 9788199253391 &middot; in Bengali
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            describing the main argument, theoretical framework, and
-            contribution of the chapter will be added here.
-          </div>
-
-        </details>
-
-      </li>
-
-    </ol>
-
-
-    <h3 class="year-head">2025</h3>
-
-    <ol class="pubs">
-
-      <li data-key="economic-crisis">
-
-        <details>
-
-          <summary class="pub-title">
-            Economic Crisis and Their Impact on Corporate Performance:
-            Firm-Level Evidence from Indian Manufacturing
-          </summary>
-
-          <div class="pub-meta">
-            <span class="pub-venue">
-              Working paper No 468 &middot;
-              Institute of Economic Growth (IEG)
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            describing the research question, empirical approach, findings,
-            and contribution of the paper will be added here.
-          </div>
-
-        </details>
-
-      </li>
-
-    </ol>
-
-  </div>
-
-
-  <!-- =====================================================
-       WORKS IN PROGRESS
-       ===================================================== -->
-
-  <div class="works-in-progress">
-
-    <h2>Works in progress</h2>
-
-    <p class="convention">
-      Ongoing work emerging from my doctoral research on domestic labour,
-      class, and household production.
-    </p>
-
-
-    <ol class="pubs">
-
-
-      <li data-key="surplus-home">
-
-        <details>
-
-          <summary class="pub-title">
-            Surplus at Home: Rethinking Domestic Labour through Class
-          </summary>
-
-          <div class="pub-meta">
-            <span class="pub-status">
-              Manuscript in preparation
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            describing the theoretical argument and contribution of the
-            paper will be added here.
-          </div>
-
-        </details>
-
-      </li>
-
-
-      <li data-key="non-commodity-household">
-
-        <details>
-
-          <summary class="pub-title">
-            Beyond the Non-Commodity Household:
-            Rethinking Domestic Production through Home-Based
-            Enterprises in India
-          </summary>
-
-          <div class="pub-meta">
-            <span class="pub-status">
-              Manuscript in preparation
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            describing the research question, theoretical framework, and
-            contribution of the paper will be added here.
-          </div>
-
-        </details>
-
-      </li>
-
-
-      <li data-key="paid-domestic-work">
-
-        <details>
-
-          <summary class="pub-title">
-            Paid Domestic Work: Commodified Labour Power in Households
-          </summary>
-
-          <div class="pub-meta">
-            <span class="pub-status">
-              Manuscript in preparation
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            discussing paid domestic labour, commodified labour power,
-            and the organisation of work within households will be added
-            here.
-          </div>
-
-        </details>
-
-      </li>
-
-
-      <li data-key="domestic-capitalist-boundary">
-
-        <details>
-
-          <summary class="pub-title">
-            Reconfiguring the Domestic&ndash;Capitalist Boundary:
-            Examining Agency-Mediated Domestic Labour
-          </summary>
-
-          <div class="pub-meta">
-            <span class="pub-status">
-              Manuscript in preparation
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            discussing agency-mediated domestic labour and the changing
-            relationship between domestic and capitalist production will
-            be added here.
-          </div>
-
-        </details>
-
-      </li>
-
-
-      <li data-key="capitalism-back-home">
-
-        <details>
-
-          <summary class="pub-title">
-            Capitalism <em>Indeed</em> Comes All the Way Back Home
-          </summary>
-
-          <div class="pub-meta">
-            <span class="pub-status">
-              Manuscript in preparation
-            </span>
-          </div>
-
-          <button class="abstract-toggle"
-                  type="button"
-                  aria-expanded="false"
-                  onclick="toggleSummary(this)">
-            Show summary
-          </button>
-
-          <div class="abstract">
-            <strong>Summary</strong>
-            This is dummy summary text for the time being. A full summary
-            describing the central argument and theoretical implications
-            of the paper will be added here.
-          </div>
-
-        </details>
-
-      </li>
-
-
-    </ol>
-
-  </div>
-
-</main>
-
-
-<footer class="pagefoot">
-  <div class="wrap">
-    &copy; Mekhla Bhowmick
-  </div>
-</footer>
-
-
-<script>
-function toggleSummary(button) {
-  const summary = button.nextElementSibling;
-  const isOpen = summary.classList.contains("show");
-
-  summary.classList.toggle("show");
-
-  button.textContent = isOpen
-    ? "Show summary"
-    : "Hide summary";
-
-  button.setAttribute(
-    "aria-expanded",
-    String(!isOpen)
-  );
+/* =========================================================
+   Mekhla Bhowmick — Academic Website
+   ========================================================= */
+
+:root {
+  --background: #fffff8;
+  --paper: #fffef9;
+  --text: #363b3d;
+  --heading: #314f60;
+  --link: #315d70;
+  --link-hover: #24495a;
+  --muted: #62696b;
+  --line: #dedfd7;
+  --soft-bg: #f7f7f0;
+  --accent: #315d70;
 }
-</script>
 
-<script src="links.js?v=1"></script>
+/* ---------- Base ---------- */
 
-</body>
-</html>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 1.2rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ---------- Main width ---------- */
+
+.wrap {
+  width: min(100% - 48px, 1060px);
+  margin: 0 auto;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* ---------- Navigation ---------- */
+
+.topnav {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.topnav .wrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: 64px;
+}
+
+.topnav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.96rem;
+  font-weight: 500;
+  padding: 18px 0;
+  border-bottom: 2px solid transparent;
+
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.topnav a:hover {
+  color: var(--heading);
+}
+
+.topnav a.current {
+  color: var(--heading);
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- Main content ---------- */
+
+main.wrap {
+  padding-top: 52px;
+  padding-bottom: 70px;
+}
+
+p {
+  margin: 0 0 25px;
+  max-width: 920px;
+}
+
+/* ---------- Header ---------- */
+
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 46px;
+}
+
+.masthead > div {
+  min-width: 0;
+}
+
+.portrait {
+  display: block;
+  width: 190px;
+  height: 190px;
+  flex: 0 0 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 5px 22px rgba(60, 55, 45, 0.12);
+}
+
+/* ---------- Main name ---------- */
+
+.masthead h1 {
+  margin: 0 0 7px;
+  color: var(--heading);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 2.65rem;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.role {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.area {
+  margin: 0;
+  color: var(--heading);
+  font-size: 1.50rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+/* ---------- Introductory text ---------- */
+
+.lede {
+  max-width: 920px;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  margin-bottom: 27px;
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3 {
+  color: var(--heading);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+h2 {
+  margin-top: 46px;
+  margin-bottom: 18px;
+  font-size: 1.55rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+/* ---------- Research interests ---------- */
+
+.interests {
+  width: 100%;
+  max-width: 920px;
+  margin: 38px 0 42px;
+  padding: 25px 0 28px;
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  text-align: center;
+}
+
+.interest-block {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.interest-block h2 {
+  width: 100%;
+  margin: 0 0 15px;
+
+  color: var(--muted);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  gap: 8px 9px;
+}
+
+.taglist li {
+  margin: 0;
+  padding: 4px 13px;
+
+  border: 1px solid #d5dfe4;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  color: var(--text);
+  font-size: 0.91rem;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+/* ---------- Looking for ---------- */
+
+.profilerow {
+  max-width: 920px;
+  margin: 36px 0 32px;
+  padding: 17px 20px;
+
+  background: var(--soft-bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.profilerow strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+/* ---------- Explore links ---------- */
+
+.explore {
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.contact {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* ---------- Page titles ---------- */
+
+.pagetitle {
+  margin: 0 0 40px;
+  color: var(--heading);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 2.35rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Timeline ---------- */
+
+.timeline {
+  margin: 0;
+}
+
+.timeline dt {
+  float: left;
+  width: 125px;
+  clear: left;
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.timeline dd {
+  margin-left: 150px;
+  margin-bottom: 24px;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* ---------- Tables ---------- */
+
+.courses {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 28px;
+}
+
+.courses th,
+.courses td {
+  padding: 13px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.courses th {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.courses .term {
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   Research / Publications
+   ========================================================= */
+
+/* ---------- Publication numbering ---------- */
+
+.publications {
+  counter-reset: publication;
+}
+
+.publications .pubs {
+  padding-left: 2rem;
+  margin-top: 0;
+}
+
+.publications .pubs li {
+  list-style: none;
+  counter-increment: publication;
+
+  position: relative;
+
+  padding-left: 0.35rem;
+  margin-bottom: 30px;
+}
+
+.publications .pubs li::before {
+  content: counter(publication) ".";
+
+  position: absolute;
+  left: -2rem;
+  top: 0;
+
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+/* ---------- Works in progress numbering ---------- */
+
+.works-in-progress {
+  counter-reset: work;
+}
+
+.works-in-progress .pubs {
+  padding-left: 2rem;
+  margin-top: 0;
+}
+
+.works-in-progress .pubs li {
+  list-style: none;
+  counter-increment: work;
+
+  position: relative;
+
+  padding-left: 0.35rem;
+  margin-bottom: 30px;
+}
+
+.works-in-progress .pubs li::before {
+  content: counter(work) ".";
+
+  position: absolute;
+  left: -2rem;
+  top: 0;
+
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+/* ---------- Publication title ---------- */
+
+.pub-title {
+  margin: 0;
+
+  color: var(--heading);
+
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.pub-title .note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
+
+/* ---------- Authors ---------- */
+
+.pub-authors {
+  margin-top: 4px;
+
+  color: var(--muted);
+
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+
+/* ---------- Publication information ---------- */
+
+.pub-meta {
+  margin-top: 3px;
+
+  color: var(--muted);
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+
+/* ---------- Publication status ---------- */
+
+.pub-status {
+  color: var(--muted);
+}
+
+
+/* ---------- Year ---------- */
+
+.year-head {
+  margin-top: 30px;
+  margin-bottom: 14px;
+
+  color: var(--accent);
+
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   Summary Toggle
+   ========================================================= */
+
+.abstract-toggle {
+  display: block;
+
+  margin-top: 0.55rem;
+  padding: 0;
+
+  border: 0;
+  background: none;
+
+  color: var(--link);
+
+  font-family: inherit;
+  font-size: 0.80rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  transition: color 0.15s ease;
+}
+
+.abstract-toggle:hover {
+  color: var(--link-hover);
+}
+
+.abstract-toggle:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+
+/* =========================================================
+   Summary Box
+   ========================================================= */
+
+.abstract {
+  display: none;
+
+  max-width: 780px;
+
+  margin-top: 0.8rem;
+  padding: 1rem 1.15rem 1.05rem;
+
+  background: var(--soft-bg);
+
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+
+  color: var(--muted);
+
+  /*
+     The summary uses a serif typeface to distinguish
+     it from the main sans-serif website text.
+  */
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.abstract.show {
+  display: block;
+}
+
+
+/* ---------- Summary heading ---------- */
+
+.abstract strong {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  color: var(--heading);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+
+  text-transform: uppercase;
+}
+
+
+/* ---------- Convention text ---------- */
+
+.convention {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.pagefoot {
+  border-top: 1px solid var(--line);
+
+  padding: 24px 0 30px;
+
+  color: var(--muted);
+
+  font-size: 0.86rem;
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  html {
+    font-size: 17px;
+  }
+
+  .wrap {
+    width: min(100% - 32px, 1060px);
+  }
+
+  /* ---------- Navigation ---------- */
+
+  .topnav .wrap {
+    gap: 18px;
+    min-height: 58px;
+    overflow-x: auto;
+  }
+
+  .topnav a {
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+
+  /* ---------- Main ---------- */
+
+  main.wrap {
+    padding-top: 38px;
+  }
+
+  /* ---------- Masthead ---------- */
+
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+
+  .portrait {
+    width: 155px;
+    height: 155px;
+    flex-basis: 155px;
+  }
+
+  .masthead h1 {
+    font-size: 2.25rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  /* ---------- Research interests ---------- */
+
+  .interests {
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 32px;
+    margin-bottom: 34px;
+
+    padding: 22px 0 25px;
+  }
+
+  .interest-block {
+    width: 100%;
+    text-align: center;
+  }
+
+  .taglist {
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .taglist li {
+    white-space: normal;
+    font-size: 0.88rem;
+  }
+
+  /* ---------- Profile ---------- */
+
+  .profilerow {
+    margin-top: 30px;
+  }
+
+  /* ---------- Timeline ---------- */
+
+  .timeline dt {
+    float: none;
+    width: auto;
+    margin-bottom: 3px;
+  }
+
+  .timeline dd {
+    margin-left: 0;
+    margin-bottom: 22px;
+  }
+
+  /* ---------- Tables ---------- */
+
+  .courses {
+    font-size: 0.92rem;
+  }
+
+  .courses th,
+  .courses td {
+    padding: 10px 7px;
+  }
+
+  /* ---------- Publications ---------- */
+
+  .publications .pubs,
+  .works-in-progress .pubs {
+    padding-left: 1.7rem;
+  }
+
+  .publications .pubs li,
+  .works-in-progress .pubs li {
+    padding-left: 0.2rem;
+    margin-bottom: 28px;
+  }
+
+  .publications .pubs li::before,
+  .works-in-progress .pubs li::before {
+    left: -1.7rem;
+  }
+
+  .pub-title {
+    font-size: 1.02rem;
+  }
+
+  .pub-authors {
+    font-size: 0.94rem;
+  }
+
+  .pub-meta {
+    font-size: 0.86rem;
+  }
+
+  .abstract-toggle {
+    font-size: 0.78rem;
+  }
+
+  .abstract {
+    padding: 0.9rem 1rem;
+
+    font-size: 0.91rem;
+    line-height: 1.65;
+  }
+}
+
+
+/* =========================================================
+   Print
+   ========================================================= */
+
+@media print {
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: none;
+  }
+
+  main.wrap {
+    padding-top: 0;
+  }
+
+  .masthead {
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  /*
+     Show summaries when printing even though they are
+     hidden interactively on the website.
+  */
+
+  .abstract-toggle {
+    display: none;
+  }
+
+  .abstract {
+    display: block;
+
+    background: white;
+
+    border-left: 1px solid #999;
+  }
+
+  .pagefoot {
+    margin-top: 24px;
+  }
+}
