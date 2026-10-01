@@ -584,30 +584,57 @@ h3 {
   }
 }
 
+/* Clickable paper title */
 .pub-title {
   cursor: pointer;
+  list-style: none;
+  display: block;
+  position: relative;
+  padding-right: 7rem;
+}
+
+/* Remove the default browser triangle */
+.pub-title::-webkit-details-marker {
+  display: none;
 }
 
 .pub-title::marker {
-  color: var(--muted);
+  display: none;
 }
 
+/* Show abstract / Hide abstract */
+.pub-title::after {
+  content: "Show abstract";
+  position: absolute;
+  right: 0;
+  top: 0.15em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  border-bottom: 1px solid currentColor;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.pub-title:hover::after {
+  color: var(--text);
+}
+
+details[open] .pub-title::after {
+  content: "Hide abstract";
+}
+
+/* Abstract */
 .abstract {
-  margin-top: 0.75rem;
+  margin: 0.8rem 0 0.4rem 0;
+  padding: 0.8rem 0 0.2rem 1rem;
+  border-left: 2px solid var(--muted);
   max-width: 760px;
   color: var(--muted);
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .abstract strong {
-  color: inherit;
-}
-
-details {
-  margin: 0;
-}
-
-details[open] {
-  margin-bottom: 0.5rem;
+  color: var(--text);
 }
