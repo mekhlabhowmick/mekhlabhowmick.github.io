@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* ------------------------------------------------------------------
+   Manmatha Roy — personal site
+   Open Sans on warm paper, light headings, deep blue links.
+   Plain CSS, no build step, no frameworks.
+   ------------------------------------------------------------------ */
+
+:root {
+  --sans:       'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --ink:        #444444;   /* headings                    */
+  --text:       #515151;   /* body copy                   */
+  --muted:      #6b6b6b;   /* secondary text              */
+  --faint:      #8e8e88;   /* labels, numbers, footer     */
+
+  --rule:       #e2e0d4;   /* section rules, nav border   */
+  --hairline:   #edebe0;   /* rules between entries       */
+
+  --accent:     #0055aa;   /* links                       */
+  --accent-dk:  #003d7a;   /* link hover                  */
+
+  --bg:         #fffff8;   /* warm paper                  */
+  --panel:      #faf9ee;
+  --card:       #fffffc;
+
+  --measure:    880px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 18.5px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- utilities ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- navigation ---------- */
+
+nav.topnav {
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 44px;
+  background: var(--bg);
+}
+
+nav.topnav .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+nav.topnav a {
+  position: relative;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  padding-bottom: 3px;
+}
+
+nav.topnav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.18s ease;
+}
+
+nav.topnav a:hover { color: var(--accent); }
+nav.topnav a:hover::after { transform: scaleX(1); }
+
+nav.topnav a.current { color: var(--ink); }
+nav.topnav a.current::after { transform: scaleX(1); background: var(--ink); }
+
+/* ---------- header block ---------- */
+
+header.masthead {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 34px;
+}
+
+header.masthead img.portrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 auto;
+  background: var(--panel);
+  box-shadow: 0 0 0 1px var(--rule), 0 6px 20px rgba(80, 75, 50, 0.08);
+}
+
+header.masthead h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+header.masthead .role {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+/* ---------- typography ---------- */
+
+h2 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 48px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 26px 0 10px;
+}
+
+h1.pagetitle {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+
+p { margin: 0 0 16px; }
+
+a { color: var(--accent); text-decoration: none; }
+
+a:hover {
+  color: var(--accent-dk);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+ul.plain { list-style: none; padding: 0; margin: 0; }
+
+p.lede { font-size: 19px; line-height: 1.6; margin-bottom: 20px; }
+
+p.lede strong { font-weight: 600; }
+
+/* ---------- interests ---------- */
+
+.interests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin: 0 0 28px;
+}
+
+.interest-block { padding: 20px 28px 22px 0; }
+
+.interest-block + .interest-block {
+  padding-left: 28px;
+  border-left: 1px solid var(--hairline);
+}
+
+.interest-block h2,
+.interest-block h3 {
+  margin: 0 0 13px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding-bottom: 0;
+  border-bottom: 0;
+  position: static;
+}
+
+ul.taglist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+ul.taglist li {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  padding: 3px 13px;
+}
+
+p.interest-note { margin: 0; font-size: 16.5px; color: var(--muted); }
+
+/* ---------- highlighted link list ---------- */
+
+ul.highlights { list-style: none; padding: 0; margin: 6px 0 0; }
+
+ul.highlights li { margin: 0 0 10px; }
+
+ul.highlights li::before {
+  content: "\2192";
+  color: var(--faint);
+  margin-right: 11px;
+}
+
+/* ---------- labelled field list (contact) ---------- */
+
+dl.fields { margin: 0; }
+
+dl.fields dt {
+  float: left;
+  clear: left;
+  width: 124px;
+  color: var(--faint);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 8px 0 0;
+}
+
+dl.fields dd { margin: 0 0 0 140px; padding: 3px 0; }
+
+.note { color: var(--faint); font-size: 15px; }
+
+/* ---------- timeline ---------- */
+
+dl.timeline { margin: 0; }
+
+dl.timeline dt {
+  float: left;
+  clear: left;
+  width: 138px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+dl.timeline dd { margin: 0 0 0 154px; padding: 5px 0; }
+
+/* ---------- profile links row ---------- */
+
+p.convention {
+  font-size: 15.5px;
+  color: var(--muted);
+  margin: 18px 0 0;
+}
+
+.alpha-star {
+  color: var(--faint);
+  font-weight: 400;
+  vertical-align: super;
+  font-size: 0.7em;
+  margin-left: 1px;
+}
+
+p.profilerow {
+  color: var(--muted);
+  font-size: 16px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 11px 16px;
+  margin-bottom: 4px;
+}
+
+/* ---------- author links ---------- */
+
+a.author-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted #c8c6b8;
+}
+
+a.author-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  text-decoration: none;
+}
+
+/* ---------- collaborator list ---------- */
+
+ul.people {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  columns: 2;
+  column-gap: 44px;
+}
+
+ul.people li { margin: 0 0 9px; break-inside: avoid; font-size: 17px; }
+
+/* ---------- publications ---------- */
+
+ol.pubs { list-style: none; padding: 0; margin: 0; }
+
+ol.pubs > li {
+  position: relative;
+  padding: 0 0 0 30px;
+  margin-bottom: 22px;
+}
+
+ol.pubs > li::before {
+  content: "\2022";
+  position: absolute;
+  left: 3px;
+  top: 0;
+  color: var(--muted);
+  font-size: 30px;
+  line-height: 0.92;
+}
+
+.pub-title {
+  font-size: 18.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.pub-authors { color: var(--muted); font-size: 16.5px; }
+
+/* The venue sits on its own line under the authors and carries the
+   link to the paper, so there is one obvious thing to click. */
+.pub-meta { margin-top: 3px; }
+
+.pub-venue {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.5px;
+  color: var(--text);
+}
+
+a.pub-venue { color: var(--accent); }
+
+a.pub-venue:hover {
+  color: var(--accent-dk);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Same row, for manuscripts that have no venue yet. */
+.pub-status {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* Anything beyond the venue link — slides, a poster, code — trails
+   after it as a small pill. */
+.pub-links { display: inline; margin-left: 10px; }
+
+.pub-links a {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  font-size: 13.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  padding: 2px 12px;
+  margin: 0 6px 4px 0;
+}
+
+.pub-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+/* Year markers are <h3> elements so the page keeps a real heading
+   outline. These rules override the global h3 styling. */
+.year-head {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+  font-variant-numeric: proportional-nums;
+  margin: 34px 0 12px;
+}
+
+/* ---------- teaching table ---------- */
+
+table.courses {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+table.courses th,
+table.courses td {
+  text-align: left;
+  padding: 11px 14px 11px 0;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+
+table.courses th {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom-color: var(--rule);
+}
+
+table.courses td.term {
+  white-space: nowrap;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 16.5px;
+}
+
+/* ---------- footer ---------- */
+
+footer.pagefoot {
+  margin-top: 64px;
+  border-top: 1px solid var(--rule);
+  padding: 20px 0 48px;
+  color: var(--faint);
+  font-size: 14px;
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 620px) {
+  body { font-size: 17.5px; }
+
+  .wrap { padding: 0 20px; }
+
+  header.masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  header.masthead img.portrait { width: 112px; height: 112px; }
+  header.masthead h1 { font-size: 31px; }
+
+  p.lede { font-size: 18px; }
+
+  h1.pagetitle { font-size: 29px; }
+  h2 { font-size: 22px; }
+
+  .interest-block { padding: 20px 0; }
+
+  .interest-block + .interest-block {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--hairline);
+  }
+
+  ul.people { columns: 1; }
+
+  dl.fields dt,
+  dl.timeline dt {
+    float: none;
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  dl.fields dd,
+  dl.timeline dd {
+    margin-left: 0;
+    padding-top: 2px;
+    margin-bottom: 12px;
+  }
+}
+
+/* ---------- reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
