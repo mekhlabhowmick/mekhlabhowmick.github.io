@@ -584,55 +584,70 @@ h3 {
   }
 }
 
-/* Clickable paper title */
+/* Publication title */
 .pub-title {
-  cursor: pointer;
-  list-style: none;
-  display: block;
-  position: relative;
-  padding-right: 7rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+  margin: 0;
 }
 
-/* Remove the default browser triangle */
-.pub-title::-webkit-details-marker {
-  display: none;
-}
-
-.pub-title::marker {
-  display: none;
-}
-
-/* Show abstract / Hide abstract */
-.pub-title::after {
-  content: "Show abstract";
-  position: absolute;
-  right: 0;
-  top: 0.15em;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+.pub-title .note {
+  font-weight: 400;
+  font-size: 0.92rem;
   color: var(--muted);
-  border-bottom: 1px solid currentColor;
-  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
-.pub-title:hover::after {
+/* Authors */
+.pub-authors {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+/* Publication details */
+.pub-meta {
+  margin-top: 0.25rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+/* Show / Hide abstract */
+.abstract-toggle {
+  display: block;
+  margin-top: 0.55rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.abstract-toggle:hover {
   color: var(--text);
 }
 
-details[open] .pub-title::after {
-  content: "Hide abstract";
+/* Abstract hidden by default */
+.abstract {
+  display: none;
+  margin-top: 0.75rem;
+  max-width: 760px;
+  padding: 0.75rem 0 0.2rem 1rem;
+  border-left: 2px solid var(--muted);
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
 }
 
-/* Abstract */
-.abstract {
-  margin: 0.8rem 0 0.4rem 0;
-  padding: 0.8rem 0 0.2rem 1rem;
-  border-left: 2px solid var(--muted);
-  max-width: 760px;
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.65;
+/* Abstract shown */
+.abstract.show {
+  display: block;
 }
 
 .abstract strong {
