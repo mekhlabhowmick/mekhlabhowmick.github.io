@@ -179,6 +179,7 @@ p {
   color: var(--heading);
   font-size: 1.00rem;
   line-height: 1.55;
+  text-align: center;
 }
 
 /* ---------- Introductory text ---------- */
