@@ -1,18 +1,19 @@
+```css
 /* =========================================================
    Mekhla Bhowmick — Academic Website
    ========================================================= */
 
 :root {
-  --bg: #f5f8fc;
+  --bg: #fffff8;
   --paper: #ffffff;
-  --text: #263746;
-  --heading: #163b5c;
+  --text: #444444;
+  --heading: #17494d;
   --link: #1769aa;
-  --link-hover: #0f4f82;
-  --muted: #5d7183;
-  --border: #d9e3ec;
-  --soft-bg: #edf4fa;
-  --accent: #2b6f9f;
+  --link-hover: #17494d;
+  --muted: #6b6560;
+  --border: #d4ccc3;
+  --soft-bg: #f7f6ef;
+  --accent: #17494d;
 }
 
 /* ---------- Base ---------- */
@@ -22,7 +23,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 body {
@@ -59,15 +60,15 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
-  min-height: 64px;
+  min-height: 66px;
 }
 
 .topnav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 0.96rem;
+  font-size: 1rem;
   font-weight: 500;
-  padding: 18px 0;
+  padding: 19px 0;
   border-bottom: 2px solid transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
@@ -84,8 +85,8 @@ body {
 /* ---------- Main content ---------- */
 
 main.wrap {
-  padding-top: 58px;
-  padding-bottom: 70px;
+  padding-top: 62px;
+  padding-bottom: 76px;
 }
 
 /* ---------- Header ---------- */
@@ -93,8 +94,8 @@ main.wrap {
 .masthead {
   display: flex;
   align-items: center;
-  gap: 34px;
-  margin-bottom: 48px;
+  gap: 36px;
+  margin-bottom: 52px;
 }
 
 .portrait {
@@ -107,10 +108,10 @@ main.wrap {
 }
 
 .masthead h1 {
-  margin: 0 0 7px;
+  margin: 0 0 8px;
   color: var(--heading);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.55rem;
+  font-size: 2.65rem;
   line-height: 1.15;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -119,7 +120,7 @@ main.wrap {
 .role {
   margin: 0;
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   line-height: 1.5;
 }
 
@@ -132,32 +133,34 @@ h3 {
 }
 
 h2 {
-  margin-top: 46px;
-  margin-bottom: 18px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.55rem;
+  font-size: 1.6rem;
   line-height: 1.3;
   font-weight: 600;
 }
 
 h3 {
   margin-top: 0;
-  margin-bottom: 14px;
-  font-size: 1.08rem;
+  margin-bottom: 15px;
+  font-size: 1.15rem;
   font-weight: 600;
 }
 
 p {
-  margin: 0 0 25px;
+  margin: 0 0 27px;
   max-width: 920px;
+  font-size: 1.08rem;
+  line-height: 1.8;
 }
 
-/* Larger introductory text */
+/* ---------- Introductory text ---------- */
 
 .lede {
-  font-size: 1.12rem;
-  line-height: 1.8;
-  margin-bottom: 27px;
+  font-size: 1.17rem;
+  line-height: 1.82;
+  margin-bottom: 29px;
 }
 
 /* ---------- Links ---------- */
@@ -172,7 +175,6 @@ a:hover {
   color: var(--link-hover);
 }
 
-/* Navigation links don't need underlines */
 .topnav a {
   text-decoration: none;
 }
@@ -180,11 +182,11 @@ a:hover {
 /* ---------- Research interests ---------- */
 
 .interests {
-  margin: 38px 0 42px;
+  margin: 40px 0 45px;
 }
 
 .interest-block {
-  padding: 27px 30px;
+  padding: 29px 32px;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -192,12 +194,13 @@ a:hover {
 
 .taglist {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 1.3rem;
+  font-size: 1.05rem;
 }
 
 .taglist li {
-  margin-bottom: 7px;
-  padding-left: 4px;
+  margin-bottom: 8px;
+  padding-left: 5px;
 }
 
 .taglist li::marker {
@@ -207,13 +210,14 @@ a:hover {
 /* ---------- Looking for ---------- */
 
 .profilerow {
-  margin: 42px 0 34px;
-  padding: 19px 23px;
+  margin: 45px 0 36px;
+  padding: 20px 24px;
   background: var(--soft-bg);
   border-left: 4px solid var(--accent);
   border-radius: 4px;
   color: var(--muted);
-  font-size: 1.03rem;
+  font-size: 1.08rem;
+  line-height: 1.7;
 }
 
 .profilerow strong {
@@ -223,10 +227,10 @@ a:hover {
 /* ---------- Page titles ---------- */
 
 .pagetitle {
-  margin: 0 0 42px;
+  margin: 0 0 44px;
   color: var(--heading);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.25rem;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -235,24 +239,26 @@ a:hover {
 
 .timeline {
   margin: 0;
+  font-size: 1.06rem;
+  line-height: 1.75;
 }
 
 .timeline dt {
   float: left;
-  width: 125px;
+  width: 130px;
   clear: left;
   color: var(--heading);
   font-weight: 600;
 }
 
 .timeline dd {
-  margin-left: 150px;
-  margin-bottom: 24px;
+  margin-left: 155px;
+  margin-bottom: 26px;
 }
 
 .note {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.94rem;
 }
 
 /* ---------- Tables ---------- */
@@ -260,12 +266,13 @@ a:hover {
 .courses {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 28px;
+  margin-top: 30px;
+  font-size: 1.04rem;
 }
 
 .courses th,
 .courses td {
-  padding: 13px 14px;
+  padding: 14px 15px;
   text-align: left;
   border-bottom: 1px solid var(--border);
 }
@@ -283,12 +290,14 @@ a:hover {
 /* ---------- Research / publications ---------- */
 
 .pubs {
-  padding-left: 1.5rem;
+  padding-left: 1.55rem;
+  font-size: 1.04rem;
 }
 
 .pubs li {
-  padding-left: 7px;
-  margin-bottom: 24px;
+  padding-left: 8px;
+  margin-bottom: 26px;
+  line-height: 1.7;
 }
 
 .pub-title {
@@ -297,20 +306,20 @@ a:hover {
 }
 
 .pub-authors {
-  margin-top: 3px;
+  margin-top: 4px;
   color: var(--muted);
 }
 
 .pub-meta {
-  margin-top: 4px;
+  margin-top: 5px;
   color: var(--muted);
-  font-size: 0.91rem;
+  font-size: 0.94rem;
 }
 
 .year-head {
-  margin-top: 30px;
+  margin-top: 32px;
   color: var(--accent);
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 600;
 }
 
@@ -318,9 +327,9 @@ a:hover {
 
 .pagefoot {
   border-top: 1px solid var(--border);
-  padding: 24px 0 30px;
+  padding: 25px 0 32px;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.9rem;
 }
 
 /* ---------- Mobile ---------- */
@@ -328,7 +337,7 @@ a:hover {
 @media (max-width: 700px) {
 
   html {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .wrap {
@@ -336,25 +345,26 @@ a:hover {
   }
 
   .topnav .wrap {
-    gap: 18px;
-    min-height: 58px;
+    gap: 19px;
+    min-height: 60px;
     overflow-x: auto;
   }
 
   .topnav a {
     white-space: nowrap;
-    font-size: 0.9rem;
+    font-size: 0.94rem;
   }
 
   main.wrap {
-    padding-top: 38px;
+    padding-top: 42px;
+    padding-bottom: 55px;
   }
 
   .masthead {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 36px;
+    gap: 21px;
+    margin-bottom: 39px;
   }
 
   .portrait {
@@ -363,16 +373,30 @@ a:hover {
   }
 
   .masthead h1 {
-    font-size: 2.15rem;
+    font-size: 2.25rem;
   }
 
   .role {
-    font-size: 1rem;
+    font-size: 1.04rem;
+  }
+
+  p {
+    font-size: 1.04rem;
+    line-height: 1.78;
   }
 
   .lede {
-    font-size: 1.05rem;
-    line-height: 1.75;
+    font-size: 1.08rem;
+    line-height: 1.78;
+  }
+
+  .pagetitle {
+    font-size: 2.1rem;
+    margin-bottom: 35px;
+  }
+
+  .timeline {
+    font-size: 1.02rem;
   }
 
   .timeline dt {
@@ -383,15 +407,28 @@ a:hover {
 
   .timeline dd {
     margin-left: 0;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
+  }
+
+  .interest-block {
+    padding: 23px 22px;
+  }
+
+  .taglist {
+    font-size: 1rem;
   }
 
   .courses {
-    font-size: 0.92rem;
+    font-size: 0.96rem;
   }
 
   .courses th,
   .courses td {
     padding: 10px 7px;
   }
+
+  .pubs {
+    font-size: 1rem;
+  }
 }
+```
