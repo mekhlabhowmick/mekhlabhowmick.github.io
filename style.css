@@ -190,26 +190,31 @@ h3 {
 }
 
 /* ---------- Research interests ---------- */
-/*
-   The entire section is centered:
-   - heading centered
-   - pills centered
-   - each pill remains normally readable
-*/
 
 .interests {
+  width: 100%;
   margin: 38px 0 42px;
   padding: 25px 0 28px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+  text-align: center !important;
 }
 
 .interest-block {
-  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .interest-block h2 {
+  width: 100%;
   margin: 0 0 15px;
+  text-align: center !important;
+
   color: var(--muted);
   font-family:
     -apple-system,
@@ -226,28 +231,41 @@ h3 {
 }
 
 .taglist {
+  width: 100%;
+  max-width: 900px;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center !important;
   align-items: center;
-  gap: 8px 9px;
-  margin: 0;
+
+  margin: 0 auto;
   padding: 0;
+
   list-style: none;
+  text-align: center !important;
+
+  gap: 8px 9px;
 }
 
 .taglist li {
   margin: 0;
   padding: 4px 13px;
+
   border: 1px solid #d5dfe4;
   border-radius: 20px;
+
   background: rgba(255, 255, 255, 0.72);
+
   color: var(--text);
   font-size: 0.91rem;
   line-height: 1.45;
   white-space: nowrap;
 }
 
+.taglist li::marker {
+  display: none;
+}
 /* ---------- Looking for ---------- */
 
 .profilerow {
