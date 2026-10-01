@@ -431,7 +431,7 @@ h3 {
 }
 
 
-/* ---------- Works in progress numbering ---------- */
+/* ---------- Works in Progress numbering ---------- */
 
 .works-in-progress {
   counter-reset: work;
@@ -471,7 +471,6 @@ h3 {
   margin: 0;
 
   color: var(--heading);
-
   font-size: 1.08rem;
   font-weight: 600;
   line-height: 1.45;
@@ -490,28 +489,19 @@ h3 {
   margin-top: 4px;
 
   color: var(--muted);
-
   font-size: 0.98rem;
   line-height: 1.5;
 }
 
 
-/* ---------- Publication information ---------- */
+/* ---------- Publication details ---------- */
 
 .pub-meta {
   margin-top: 3px;
 
   color: var(--muted);
-
   font-size: 0.88rem;
   line-height: 1.5;
-}
-
-
-/* ---------- Publication status ---------- */
-
-.pub-status {
-  color: var(--muted);
 }
 
 
@@ -522,20 +512,19 @@ h3 {
   margin-bottom: 14px;
 
   color: var(--accent);
-
   font-size: 1.05rem;
   font-weight: 600;
 }
 
 
 /* =========================================================
-   Summary Toggle
+   Show / Hide Summary
    ========================================================= */
 
 .abstract-toggle {
   display: block;
 
-  margin-top: 0.55rem;
+  margin-top: 7px;
   padding: 0;
 
   border: 0;
@@ -576,8 +565,8 @@ h3 {
 
   max-width: 780px;
 
-  margin-top: 0.8rem;
-  padding: 1rem 1.15rem 1.05rem;
+  margin-top: 10px;
+  padding: 15px 18px 16px;
 
   background: var(--soft-bg);
 
@@ -585,11 +574,6 @@ h3 {
   border-radius: 3px;
 
   color: var(--muted);
-
-  /*
-     The summary uses a serif typeface to distinguish
-     it from the main sans-serif website text.
-  */
 
   font-family:
     Georgia,
@@ -610,7 +594,7 @@ h3 {
 .abstract strong {
   display: block;
 
-  margin-bottom: 0.35rem;
+  margin-bottom: 5px;
 
   color: var(--heading);
 
@@ -637,7 +621,6 @@ h3 {
   color: var(--muted);
   font-size: 0.98rem;
 }
-
 
 /* =========================================================
    Footer
