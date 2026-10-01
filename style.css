@@ -1,433 +1,681 @@
 
-/* =========================================================
-   Mekhla Bhowmick — Academic Website
-   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* ------------------------------------------------------------------
+   Mekhla Bhowmick — personal academic website
+   Minimal, warm, scholarly design.
+   ------------------------------------------------------------------ */
 
 :root {
-  --bg: #fffff8;
-  --paper: #ffffff;
-  --text: #444444;
-  --heading: #17494d;
-  --link: #1769aa;
-  --link-hover: #17494d;
-  --muted: #6b6560;
-  --border: #d4ccc3;
-  --soft-bg: #f7f6ef;
-  --accent: #17494d;
+  --sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --ink:       #263238;
+  --text:      #37474F;
+  --muted:     #66727C;
+  --faint:     #7B8790;
+
+  --rule:      #D9E2E8;
+  --hairline:  #EAF0F3;
+
+  --accent:    #1769AA;
+  --accent-dk: #0D4F80;
+
+  --bg:        #FCFBF7;
+  --panel:     #F3F7FA;
+  --card:      #FFFFFF;
+
+  --measure:   900px;
 }
 
-/* ---------- Base ---------- */
+
+/* ---------- base ---------- */
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-size: 19px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 1rem;
-  line-height: 1.75;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.72;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
-
-/* ---------- Main width ---------- */
 
 .wrap {
-  width: min(100% - 48px, 1060px);
+  max-width: var(--measure);
   margin: 0 auto;
+  padding: 0 28px;
 }
 
-/* ---------- Navigation ---------- */
 
-.topnav {
-  border-bottom: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.82);
+/* ---------- accessibility ---------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
-.topnav .wrap {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  min-height: 66px;
-}
 
-.topnav a {
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 19px 0;
-  border-bottom: 2px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
+/* ---------- navigation ---------- */
 
-.topnav a:hover {
-  color: var(--heading);
-}
-
-.topnav a.current {
-  color: var(--heading);
-  border-bottom-color: var(--accent);
-}
-
-/* ---------- Main content ---------- */
-
-main.wrap {
-  padding-top: 62px;
-  padding-bottom: 76px;
-}
-
-/* ---------- Header ---------- */
-
-.masthead {
-  display: flex;
-  align-items: center;
-  gap: 36px;
+nav.topnav {
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg);
   margin-bottom: 52px;
 }
 
-.portrait {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
+nav.topnav .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+
+nav.topnav a {
+  position: relative;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  padding-bottom: 5px;
+  transition: color 0.15s ease;
+}
+
+nav.topnav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.15s ease;
+}
+
+nav.topnav a:hover {
+  color: var(--accent);
+}
+
+nav.topnav a:hover::after {
+  transform: scaleX(1);
+}
+
+nav.topnav a.current {
+  color: var(--ink);
+}
+
+nav.topnav a.current::after {
+  transform: scaleX(1);
+  background: var(--ink);
+}
+
+
+/* ---------- home/profile header ---------- */
+
+header.masthead {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 38px;
+}
+
+header.masthead img.portrait {
+  width: 148px;
+  height: 148px;
   border-radius: 50%;
-  border: 5px solid #ffffff;
-  box-shadow: 0 5px 22px rgba(30, 60, 90, 0.13);
+  object-fit: cover;
+  flex: 0 0 auto;
+  background: var(--panel);
+  box-shadow:
+    0 0 0 1px var(--rule),
+    0 5px 18px rgba(38, 50, 56, 0.08);
 }
 
-.masthead h1 {
-  margin: 0 0 8px;
-  color: var(--heading);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.65rem;
-  line-height: 1.15;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+header.masthead h1 {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
 }
 
-.role {
+header.masthead .role {
   margin: 0;
   color: var(--muted);
-  font-size: 1.15rem;
+  font-size: 16px;
   line-height: 1.5;
 }
 
-/* ---------- Typography ---------- */
+
+/* ---------- typography ---------- */
 
 h1,
 h2,
 h3 {
-  color: var(--heading);
+  color: var(--ink);
+}
+
+h1.pagetitle {
+  margin: 0 0 30px;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 h2 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.6rem;
+  margin: 48px 0 19px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 22px;
+  font-weight: 500;
   line-height: 1.3;
-  font-weight: 600;
 }
 
 h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 1.15rem;
+  margin: 30px 0 11px;
+  font-size: 18px;
   font-weight: 600;
+  line-height: 1.4;
 }
 
 p {
-  margin: 0 0 27px;
-  max-width: 920px;
-  font-size: 1.08rem;
-  line-height: 1.8;
+  margin: 0 0 18px;
 }
 
-/* ---------- Introductory text ---------- */
-
-.lede {
-  font-size: 1.17rem;
-  line-height: 1.82;
-  margin-bottom: 29px;
+p.lede {
+  max-width: 850px;
+  margin-bottom: 22px;
+  font-size: 18.5px;
+  line-height: 1.68;
 }
-
-/* ---------- Links ---------- */
 
 a {
-  color: var(--link);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  color: var(--link-hover);
-}
-
-.topnav a {
+  color: var(--accent);
   text-decoration: none;
 }
 
-/* ---------- Research interests ---------- */
+a:hover {
+  color: var(--accent-dk);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* ---------- interests ---------- */
 
 .interests {
-  margin: 40px 0 45px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.9fr);
+  margin: 0 0 32px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
 }
 
 .interest-block {
-  padding: 29px 32px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  padding: 21px 28px 23px 0;
 }
 
-.taglist {
+.interest-block + .interest-block {
+  padding-left: 28px;
+  border-left: 1px solid var(--hairline);
+}
+
+.interest-block h2,
+.interest-block h3 {
+  margin: 0 0 13px;
+  padding: 0;
+  border: 0;
+  color: var(--faint);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+ul.taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
   margin: 0;
-  padding-left: 1.3rem;
-  font-size: 1.05rem;
+  padding: 0;
 }
 
-.taglist li {
-  margin-bottom: 8px;
-  padding-left: 5px;
+ul.taglist li {
+  padding: 3px 11px;
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 13.5px;
+  line-height: 1.5;
 }
 
-.taglist li::marker {
-  color: var(--accent);
-}
-
-/* ---------- Looking for ---------- */
-
-.profilerow {
-  margin: 45px 0 36px;
-  padding: 20px 24px;
-  background: var(--soft-bg);
-  border-left: 4px solid var(--accent);
-  border-radius: 4px;
+p.interest-note {
+  margin: 0;
   color: var(--muted);
-  font-size: 1.08rem;
-  line-height: 1.7;
+  font-size: 15.5px;
+  line-height: 1.65;
 }
 
-.profilerow strong {
-  color: var(--heading);
+
+/* ---------- profile / looking-for box ---------- */
+
+p.profilerow {
+  margin: 28px 0 22px;
+  padding: 12px 16px;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 15.5px;
 }
 
-/* ---------- Page titles ---------- */
-
-.pagetitle {
-  margin: 0 0 44px;
-  color: var(--heading);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.4rem;
+p.profilerow strong {
+  color: var(--ink);
   font-weight: 600;
-  line-height: 1.2;
 }
 
-/* ---------- Timeline ---------- */
 
-.timeline {
+/* ---------- timeline ---------- */
+
+dl.timeline {
   margin: 0;
-  font-size: 1.06rem;
-  line-height: 1.75;
 }
 
-.timeline dt {
+dl.timeline dt {
   float: left;
-  width: 130px;
   clear: left;
-  color: var(--heading);
-  font-weight: 600;
+  width: 150px;
+  padding: 6px 0;
+  color: var(--muted);
+  font-size: 15.5px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.6;
 }
 
-.timeline dd {
-  margin-left: 155px;
-  margin-bottom: 26px;
+dl.timeline dd {
+  margin: 0 0 0 166px;
+  padding: 6px 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+dl.timeline dd + dt {
+  margin-top: 3px;
 }
 
 .note {
-  color: var(--muted);
-  font-size: 0.94rem;
+  color: var(--faint);
+  font-size: 14px;
 }
 
-/* ---------- Tables ---------- */
 
-.courses {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 30px;
-  font-size: 1.04rem;
+/* ---------- labelled fields ---------- */
+
+dl.fields {
+  margin: 0;
 }
 
-.courses th,
-.courses td {
-  padding: 14px 15px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-}
-
-.courses th {
-  color: var(--heading);
+dl.fields dt {
+  float: left;
+  clear: left;
+  width: 125px;
+  padding: 7px 0 0;
+  color: var(--faint);
+  font-size: 11.5px;
   font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.courses .term {
-  white-space: nowrap;
+dl.fields dd {
+  margin: 0 0 0 142px;
+  padding: 4px 0;
+}
+
+
+/* ---------- publication list ---------- */
+
+ol.pubs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol.pubs > li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 27px;
+}
+
+ol.pubs > li::before {
+  content: "\2022";
+  position: absolute;
+  left: 2px;
+  top: 0;
   color: var(--muted);
-}
-
-/* ---------- Research / publications ---------- */
-
-.pubs {
-  padding-left: 1.55rem;
-  font-size: 1.04rem;
-}
-
-.pubs li {
-  padding-left: 8px;
-  margin-bottom: 26px;
-  line-height: 1.7;
+  font-size: 26px;
+  line-height: 1;
 }
 
 .pub-title {
-  color: var(--heading);
+  margin-bottom: 3px;
+  color: var(--ink);
+  font-size: 17px;
   font-weight: 600;
+  line-height: 1.48;
 }
 
 .pub-authors {
-  margin-top: 4px;
   color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.55;
 }
 
 .pub-meta {
-  margin-top: 5px;
-  color: var(--muted);
-  font-size: 0.94rem;
+  margin-top: 4px;
+}
+
+.pub-venue {
+  color: var(--text);
+  font-size: 15px;
+}
+
+a.pub-venue {
+  color: var(--accent);
+}
+
+.pub-status {
+  color: var(--faint);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .year-head {
-  margin-top: 32px;
-  color: var(--accent);
-  font-size: 1.08rem;
+  margin: 34px 0 13px;
+  padding: 0;
+  border: 0;
+  color: var(--muted);
+  font-size: 17px;
   font-weight: 600;
 }
 
-/* ---------- Footer ---------- */
 
-.pagefoot {
-  border-top: 1px solid var(--border);
-  padding: 25px 0 32px;
-  color: var(--muted);
-  font-size: 0.9rem;
+/* ---------- publication auxiliary links ---------- */
+
+.pub-links {
+  display: inline;
+  margin-left: 8px;
 }
 
-/* ---------- Mobile ---------- */
+.pub-links a {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  margin: 0 5px 4px 0;
+  padding: 2px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 12.5px;
+  letter-spacing: 0.01em;
+}
+
+.pub-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+
+/* ---------- collaborators ---------- */
+
+ul.people {
+  columns: 2;
+  column-gap: 44px;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+ul.people li {
+  break-inside: avoid;
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+
+/* ---------- teaching table ---------- */
+
+table.courses {
+  width: 100%;
+  margin-top: 8px;
+  border-collapse: collapse;
+}
+
+table.courses th,
+table.courses td {
+  padding: 12px 18px 12px 0;
+  border-bottom: 1px solid var(--hairline);
+  text-align: left;
+  vertical-align: top;
+}
+
+table.courses th {
+  padding-top: 7px;
+  padding-bottom: 9px;
+  border-bottom-color: var(--rule);
+  color: var(--faint);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+table.courses td {
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+table.courses td.term {
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* ---------- misc / talks ---------- */
+
+main > h2 + dl.timeline {
+  margin-bottom: 4px;
+}
+
+
+/* ---------- conventions / small notes ---------- */
+
+p.convention {
+  margin: 18px 0 4px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.alpha-star {
+  margin-left: 1px;
+  color: var(--faint);
+  font-size: 0.7em;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+
+/* ---------- author links ---------- */
+
+a.author-link {
+  border-bottom: 1px dotted #C9D5DC;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.author-link:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+
+/* ---------- footer ---------- */
+
+footer.pagefoot {
+  margin-top: 70px;
+  padding: 20px 0 48px;
+  border-top: 1px solid var(--rule);
+  color: var(--faint);
+  font-size: 13px;
+}
+
+
+/* ---------- mobile ---------- */
 
 @media (max-width: 700px) {
 
-  html {
-    font-size: 18px;
+  body {
+    font-size: 16.5px;
   }
 
   .wrap {
-    width: min(100% - 32px, 1060px);
+    padding: 0 21px;
   }
 
-  .topnav .wrap {
-    gap: 19px;
-    min-height: 60px;
-    overflow-x: auto;
+  nav.topnav {
+    margin-bottom: 40px;
   }
 
-  .topnav a {
-    white-space: nowrap;
-    font-size: 0.94rem;
+  nav.topnav .wrap {
+    gap: 20px;
   }
 
-  main.wrap {
-    padding-top: 42px;
-    padding-bottom: 55px;
+  nav.topnav a {
+    font-size: 14px;
   }
 
-  .masthead {
-    flex-direction: column;
+  header.masthead {
     align-items: flex-start;
     gap: 21px;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
   }
 
-  .portrait {
-    width: 155px;
-    height: 155px;
+  header.masthead img.portrait {
+    width: 112px;
+    height: 112px;
   }
 
-  .masthead h1 {
-    font-size: 2.25rem;
+  header.masthead h1 {
+    font-size: 31px;
   }
 
-  .role {
-    font-size: 1.04rem;
+  header.masthead .role {
+    font-size: 14.5px;
   }
 
-  p {
-    font-size: 1.04rem;
-    line-height: 1.78;
+  h1.pagetitle {
+    margin-bottom: 25px;
+    font-size: 29px;
   }
 
-  .lede {
-    font-size: 1.08rem;
-    line-height: 1.78;
+  h2 {
+    margin-top: 40px;
+    font-size: 21px;
   }
 
-  .pagetitle {
-    font-size: 2.1rem;
-    margin-bottom: 35px;
+  p.lede {
+    font-size: 17.5px;
   }
 
-  .timeline {
-    font-size: 1.02rem;
-  }
-
-  .timeline dt {
-    float: none;
-    width: auto;
-    margin-bottom: 3px;
-  }
-
-  .timeline dd {
-    margin-left: 0;
-    margin-bottom: 23px;
+  .interests {
+    display: block;
   }
 
   .interest-block {
-    padding: 23px 22px;
+    padding: 19px 0;
   }
 
-  .taglist {
-    font-size: 1rem;
+  .interest-block + .interest-block {
+    padding-left: 0;
+    border-top: 1px solid var(--hairline);
+    border-left: 0;
   }
 
-  .courses {
-    font-size: 0.96rem;
+  dl.fields dt,
+  dl.timeline dt {
+    float: none;
+    width: auto;
+    padding-bottom: 1px;
   }
 
-  .courses th,
-  .courses td {
-    padding: 10px 7px;
+  dl.fields dd,
+  dl.timeline dd {
+    margin-left: 0;
+    padding-top: 1px;
+    margin-bottom: 13px;
   }
 
-  .pubs {
-    font-size: 1rem;
+  table.courses {
+    display: block;
+    overflow-x: auto;
+  }
+
+  table.courses th,
+  table.courses td {
+    min-width: 130px;
+    padding-right: 15px;
+  }
+
+  ul.people {
+    columns: 1;
+  }
+
+  ol.pubs > li {
+    padding-left: 24px;
+  }
+}
+
+
+/* ---------- reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
